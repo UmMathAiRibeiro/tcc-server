@@ -1,0 +1,7 @@
+{
+    "rotas": {
+        "cadastroUsuario": "/cadastro",
+        "loginUsuario": "/login",
+        "cadastroIntegrante": "/cadastroIntegrante"
+    }
+}
