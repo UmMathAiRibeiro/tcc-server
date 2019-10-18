@@ -2,6 +2,7 @@
     "rotas": {
         "cadastroUsuario": "/cadastro",
         "loginUsuario": "/login",
-        "cadastroIntegrante": "/cadastroIntegrante"
+        "cadastroIntegrante": "/cadastroIntegrante",
+        "listarIntegrantes": "/listarIntegrantes"
     }
 }

@@ -13,7 +13,6 @@ module.exports = function (app) {
                 console.log(err);
                 conection.end();
             } else {
-                console.log();
                 if (logado[0].count != 0) {
                     loginDAO.dados(data, function (err, dados) {
                         if (err) {
