@@ -1,10 +1,10 @@
 var rota = require('../../rotas.json').rotas;
 module.exports = function (app) {
-    var listar = function (req, res, next) {
+    var deletar = function (req, res, next) {
         var conection = app.infra.conectionFactory();
-        var listarDAO = new app.infra.integranteDAO.listarDAO(conection);
-        var data = req.body;
-        listarDAO.listarIntegrantes(data, function (err, result) {
+        var deletarDAO = new app.infra.integranteDAO.deletarDAO(conection);
+        var data = req.params;
+        deletarDAO.deletarIntegrante(data.id, function (err, result) {
             if (err) {
                 res.json({
                     status: 500,
@@ -21,5 +21,5 @@ module.exports = function (app) {
             }
         });
     };
-    app.post(rota.listarIntegrantes, listar)
+    app.delete(rota.deletarIntegrantes, deletar)
 };

@@ -3,6 +3,8 @@
         "cadastroUsuario": "/cadastro",
         "loginUsuario": "/login",
         "cadastroIntegrante": "/cadastroIntegrante",
-        "listarIntegrantes": "/listarIntegrantes"
+        "listarIntegrantes": "/listarIntegrantes",
+        "atualizarIntegrante": "/atualizarIntegrante",
+        "deletarIntegrantes": "/deletarIntegrante/:id"
     }
 }

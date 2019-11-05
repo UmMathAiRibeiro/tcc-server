@@ -1,10 +1,10 @@
 var rota = require('../../rotas.json').rotas;
 module.exports = function (app) {
-    var listar = function (req, res, next) {
+    var atualizar = function (req, res, next) {
         var conection = app.infra.conectionFactory();
-        var listarDAO = new app.infra.integranteDAO.listarDAO(conection);
+        var atualizarDAO = new app.infra.integranteDAO.atualizarDAO(conection);
         var data = req.body;
-        listarDAO.listarIntegrantes(data, function (err, result) {
+        atualizarDAO.atualizarIntegrante(data, function (err, result) {
             if (err) {
                 res.json({
                     status: 500,
@@ -21,5 +21,5 @@ module.exports = function (app) {
             }
         });
     };
-    app.post(rota.listarIntegrantes, listar)
+    app.put(rota.atualizarIntegrante, atualizar)
 };
