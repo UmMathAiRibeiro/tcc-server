@@ -5,6 +5,8 @@
         "cadastroIntegrante": "/cadastroIntegrante",
         "listarIntegrantes": "/listarIntegrantes",
         "atualizarIntegrante": "/atualizarIntegrante",
-        "deletarIntegrantes": "/deletarIntegrante/:id"
+        "deletarIntegrantes": "/deletarIntegrante/:id",
+        "selecionaIngredientes": "/selecionaIngredientes",
+        "listarReceitas": "/listarReceitas"
     }
 }
