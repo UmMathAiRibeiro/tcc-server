@@ -3,8 +3,7 @@ module.exports = function (app) {
     var listar = function (req, res, next) {
         var conection = app.infra.conectionFactory();
         var listarDAO = new app.infra.receitaDAO.listarDAO(conection);
-        var data = req.body;
-        listarDAO.listarIntegrantes(data, function (err, result) {
+        listarDAO.listarReceitas(function (err, result) {
             if (err) {
                 res.json({
                     status: 500,

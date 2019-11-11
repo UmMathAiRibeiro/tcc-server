@@ -7,6 +7,8 @@
         "atualizarIntegrante": "/atualizarIntegrante",
         "deletarIntegrantes": "/deletarIntegrante/:id",
         "selecionaIngredientes": "/selecionaIngredientes",
-        "listarReceitas": "/listarReceitas"
+        "listarReceitas": "/listarReceitas",
+        "adicionarIngredientes": "/adicionarIngredientes",
+        "adicionarReceitas": "/adicionarReceitas"
     }
 }
