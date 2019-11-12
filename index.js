@@ -1,4 +1,5 @@
-var app = require('./config/express');
-app().listen(3005, () => {
-    console.log('Server FamiliaSaudavel na porta 3005');
+var app = require("./config/express");
+var porta = process.env.PORT || 3005;
+app().listen(porta, () => {
+  console.log("Server FamiliaSaudavel na porta 3005");
 });
