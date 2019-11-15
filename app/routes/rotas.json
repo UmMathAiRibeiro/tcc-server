@@ -9,6 +9,7 @@
         "selecionaIngredientes": "/selecionaIngredientes",
         "listarReceitas": "/listarReceitas",
         "adicionarIngredientes": "/adicionarIngredientes",
-        "adicionarReceitas": "/adicionarReceitas"
+        "adicionarReceitas": "/adicionarReceitas",
+        "contarReceitas": "/contarReceitas"
     }
 }
